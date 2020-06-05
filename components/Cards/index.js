@@ -25,6 +25,14 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
         console.log('Cards Response', response)
 
+        const array = Object.values(response.data.articles)
+        console.log('this is array', array)
+
+        array.forEach(element => {
+            element.forEach(article =>{
+            cardsContainer.appendChild(cardMaker(article))               
+            })
+        })
     })
     .catch(error =>{
         console.log('Error MSG:', error)
@@ -57,5 +65,3 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
 
         return card
     }
-    // const test = cardMaker('dfafaf','sdfagfagg','gsafgafas')
-    // console.log(test)
