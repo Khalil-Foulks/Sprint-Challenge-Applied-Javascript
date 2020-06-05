@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is an object that contains the instructions for how the webpage should look and act.
+
 2. What is an event?
+
+An event is any time a user interacts with the webpage in any way.
 
 3. What is an event listener?
 
+An event listner listens for some type of event and then does something.
+
 4. Why would we convert a NodeList into an Array?
 
+A NodeList only has access to .forEach. An array has access to all array methods. 
+
 5. What is a component?
+
+A component bundles HTML, CSS and JS so that it can be reused to build elements that share functionality and styling.
 
 ### Git Set up
 
